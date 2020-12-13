@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://heuristic-boyd-834325.netlify.app.com/* http://www.happilyafter.online/:splat 301!
