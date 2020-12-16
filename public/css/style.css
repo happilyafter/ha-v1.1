@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
-#hero p {
+#hero h3 {
   color: #484848a9;
   margin-bottom: 50px;
 
@@ -576,9 +576,47 @@ section {
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #f6f6f6;
+  transition: ease-in-out 0.3s;
+}
+
+.features .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.features .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.features .icon-box h3 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+
+.features .icon-box h3 a:hover {
+  color: #3498db;
+}
+
+.features .icon-box:hover {
+  background: #eef7fc;
+}
+
 
 /*--------------------------------------------------------------
-# Services is a FEATURE
+# Services
 --------------------------------------------------------------*/
 .services .icon-box {
   padding: 30px;
@@ -639,6 +677,10 @@ section {
 
 .services .title a {
   color: #111;
+}
+
+.services p {
+  color: gray;
 }
 
 .services .description {
@@ -751,6 +793,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
   }
 }
 
@@ -778,8 +821,12 @@ section {
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Testimonials/Template
+# Testimonials dan Promotions
 --------------------------------------------------------------*/
+#promotions{
+  background-color: #f3f9fd;
+}
+
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
@@ -801,6 +848,13 @@ section {
   position: absolute;
   left: -45px;
 }
+
+@media (max-width: 576px) {
+  #promotions .promosi h2 {
+    font-size: 26px;
+  }
+}
+
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
